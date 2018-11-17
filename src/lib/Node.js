@@ -659,4 +659,9 @@ export default class Node {
       children: this.children.map(node => this.tree.objectToNode(node).toJSON())
     }
   }
+
+  setText (text) {
+    this.text = text
+    this.$emit('setSext')
+  }
 }

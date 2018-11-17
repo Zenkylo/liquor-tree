@@ -52,4 +52,9 @@ export default class Selection extends Array {
 
     return this
   }
+  
+  setText (text) {
+    nodeIterator(this, 'setText', text)
+  }
+
 }
